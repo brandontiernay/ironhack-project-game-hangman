@@ -1,0 +1,156 @@
+/* Anything marked 'Dustin' was put in with suggestions or help. Take note of it and go back to the student portal so that you may undertand the reason they were used and why they work. */
+
+body {
+    width: 98vw;
+    height: 98vh;
+    background-color: rgb(46, 1, 58);
+    /* border-color: rgb(1, 9, 58); */
+  }
+
+#hangman-logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#hangman-logo img {
+    height: 30vh; /* Dustin */
+}
+
+#new-game-button {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* #new-game-button button {
+    background-color: #e7ac16;
+    padding: 0.6em 1.2em;
+    text-align: center;
+    font-size: 12px;
+} */
+
+/* Dustin */
+#win {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Dustin */
+#lose {
+    visibility: hidden;
+    height: 0px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Dustin */
+    height: 60%; /* Dustin */
+    visibility: visible; /* Dustin */
+}
+
+#hangman-div {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    /* width: 50%; */
+}
+
+/* Dustin */
+#platform {
+    visibility: visible;
+    height: 30vh;
+}
+
+/* Dustin */
+#head {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Dustin */
+#torso {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Dustin */
+#left-leg {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Dustin */
+#right-leg {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Dustin */
+#left-arm {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Dustin */
+#right-arm {
+    visibility: hidden;
+    height: 0px;
+}
+
+#keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 15vh;
+    width: 20vh;
+}
+
+.top-keyboard-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.middle-keyboard-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bottom-keyboard-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#keyboard button {
+    background-color: #e7ac16;
+    border: thick;
+    border-style: groove;
+    border-color: rgb(46, 1, 58);
+    color: black;
+    padding: 10px 25px;
+    /* margin: 6px 6px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 900;
+}
