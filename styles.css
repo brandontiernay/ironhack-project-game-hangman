@@ -160,7 +160,7 @@ body {
 }
 
 #visible-word {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: gray;
     letter-spacing: 15px;
     display: flex;

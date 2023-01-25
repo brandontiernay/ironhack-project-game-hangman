@@ -12,6 +12,9 @@ const numberOfErrors = 0;
 const secretString = "flexbox";
 let visibleString = secretString.split('').fill('_').join('');
 const visibleWord = document.querySelector('#visible-word');
+const winWord = [
+
+];
 
 // const updateVisibleWord = (newWord) => {
 //     const visibleWord = document.querySelector('#visible-word');
@@ -49,6 +52,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         console.log(event.target.innerHTML);
         handleLetterClick(letter);
         handleWrongLetter(letter);
+        handleCorrectLetter(letter);
         button.disabled = true; // Disable pressed keys
     });
 
@@ -57,29 +61,60 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
 
   const handleCorrectLetter = (letter) => {
-
+    let lowerCaseLetter = letter.toLowerCase()
+    for (let i = 0; i < secretString.length; i++) {
+        if (secretString[i].toLowerCase() === lowerCaseLetter) {
+            winWord.push(lowerCaseLetter);
+            console.log(winWord);
+            console.log(letter);
+        }
+    }
   }
 
   let count = 0;
   const handleWrongLetter = (letter) => {
+    let platform = document.querySelector("#platform");
+    platform.style.display = "none";
     for (let i = 0; i < secretString.length; i++) {
         console.log(secretString[i]);
         console.log(letter);
         if (letter !== secretString[i] && count === 0) {
-           let platform = document.querySelector("#platform");
+           
            let head = document.querySelector("#head");
-           platform.style.display = "none";
            head.style.visibility = "visible";
            head.style.height = "30vh";
         } else if (letter !== secretString[i] && count === 1) {
-            let platform = document.querySelector("#platform");
             let head = document.querySelector("#head");
             let torso = document.querySelector("#torso");
-            head.style.visibility = "hidden";
-            platform.style.display = "none";
+            head.style.display = "none";
             torso.style.visibility = "visible";
             torso.style.height = "30vh";
-            console.log("hey");
+         } else if (letter !== secretString[i] && count === 2) {
+            let torso = document.querySelector("#torso");
+            let leftLeg = document.querySelector("#left-leg");
+            torso.style.display = "none";
+            leftLeg.style.visibility = "visible";
+            leftLeg.style.height = "30vh";
+         } else if (letter !== secretString[i] && count === 3) {
+            let leftLeg = document.querySelector("#left-leg");
+            let rightLeg = document.querySelector("#right-leg");
+            leftLeg.style.display = "none";
+            rightLeg.style.visibility = "visible";
+            rightLeg.style.height = "30vh";
+         } else if (letter !== secretString[i] && count === 4) {
+            let rightLeg = document.querySelector("#right-leg");
+            let leftArm = document.querySelector("#left-arm");
+            rightLeg.style.display = "none";
+            leftArm.style.visibility = "visible";
+            leftArm.style.height = "30vh";
+         } else if (letter !== secretString[i] && count === 5) {
+            let leftArm = document.querySelector("#left-arm");
+            let rightArm = document.querySelector("#right-arm");
+            leftArm.style.display = "none";
+            rightArm.style.visibility = "visible";
+            rightArm.style.height = "30vh";
+            let youLose = document.querySelector("#lose")
+            youLose.style.visibility = "visible";
          }
     }
     count++;
