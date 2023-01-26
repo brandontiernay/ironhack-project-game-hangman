@@ -3,7 +3,7 @@
 body {
     width: 98vw;
     height: 98vh;
-    background-color: rgb(46, 1, 58);
+    background-color:#019999;
     /* border-color: rgb(1, 9, 58); */
   }
 
@@ -25,7 +25,17 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+}
+#new-game-button button {
+    border: 2px solid #000000;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: #f1c860;
+    font-weight: 500;
 }
 
 /* #new-game-button button {
@@ -44,7 +54,25 @@ body {
 /* Dustin */
 #lose {
     visibility: hidden;
-    height: 0px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* background-color: white; */
+    /* position: relative; */
+}
+#lose h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #f1c860;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    /* position: absolute;
+    font-size: 10px; */
+    letter-spacing: 5px;
+    font-size: 60px;
 }
 
 #container {
@@ -53,14 +81,16 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%; /* Dustin */
-    height: 60%; /* Dustin */
+    height: 50%; /* Dustin */
     visibility: visible; /* Dustin */
+    margin-top: 12px;
 }
 
 #hangman-div {
     display: flex;
     align-items: flex-start;
     background-color: white;
+    border: 3px solid #000000;
     /* width: 50%; */
 }
 
@@ -114,6 +144,8 @@ body {
     align-content: space-between;
     height: 15vh;
     width: 20vh;
+    margin: 16px 0px;
+    gap: 0.6em;
 }
 
 .top-keyboard-row {
@@ -122,6 +154,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 0.6em;
 }
 
 .middle-keyboard-row {
@@ -130,6 +163,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 0.6em;
 }
 
 .bottom-keyboard-row {
@@ -138,13 +172,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 0.6em;
 }
 
 #keyboard button {
-    background-color: #e7ac16;
-    border: thick;
-    border-style: groove;
-    border-color: rgb(46, 1, 58);
+    background-color: #f6d621;
+    /* border: thick; */
+    /* border-style: groove; */
+    border-color: black;
+    border-radius: 0.5em;
     color: black;
     padding: 10px 25px;
     /* margin: 6px 6px; */
@@ -161,7 +197,12 @@ body {
 
 #visible-word {
     /* text-transform: uppercase; */
-    color: gray;
+    color: black;
     letter-spacing: 15px;
     display: flex;
+    /* background-color: purple; */
 } 
+
+.hide {
+    display: none;
+  }

@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <title>Ironhangman</title>
 
     <!-- Stylesheet  -->
@@ -18,7 +19,7 @@
     <!--  HTML  -->
 
     <div id="hangman-logo">
-        <img src="/images/hangman-logo.png" alt="hangman-logo">
+        <img src="images/hangman-logo.png" alt="hangman-logo">
     </div>
 
     <div id="new-game-button">
@@ -43,17 +44,33 @@
 
         <div id="hangman-div">
             
-            <img id="platform" src="/images/00-hangman-platform.png">
-            <img id="head" src="/images/01-hangman-head.png">
-            <img id="torso" src="/images/02-hangman-torso.png">
-            <img id="left-leg" src="/images/03-hangman-left-leg.png">
-            <img id="right-leg" src="/images/04-hangman-right-leg.png">
-            <img id="left-arm" src="/images/05-hangman-left-arm.png">
-            <img id="right-arm" src="/images/06-hangman-right-arm.png">
+            <img id="platform" src="images/00-hangman-platform.png">
+            <img id="head" src="images/01-hangman-head.png">
+            <img id="torso" src="images/02-hangman-torso.png">
+            <img id="left-leg" src="images/03-hangman-left-leg.png">
+            <img id="right-leg" src="images/04-hangman-right-leg.png">
+            <img id="left-arm" src="images/05-hangman-left-arm.png">
+            <img id="right-arm" src="images/06-hangman-right-arm.png">
 
         </div>
 
-        <div id="visible-word"></div>
+        <div id="visible-word">
+            <div class="hide letter">r</div>
+            <div class="hide letter">i</div>
+
+            <div class="hide letter">g</div>
+
+            <div class="hide letter">h</div>
+
+            <div class="hide letter">t</div>
+
+            <!-- <div class="hide letter">o</div> -->
+
+            <!-- <div class="hide letter">x</div> -->
+
+
+
+        </div>
 
         <div id="keyboard">
     
