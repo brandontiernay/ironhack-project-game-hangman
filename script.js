@@ -125,7 +125,11 @@ const handleCorrectLetter = (letter) => {
     }
     console.log(rightArray);
     if (rightArray.join("") === secretString) {
-      alert("hey");
+        let container = document.querySelector('#container');
+        container.style.display = "none";
+        let youWin = document.querySelector("#win")
+        youWin.style.visibility = "visible";
+    //   alert("You win!");
     }
     rightLetter++;
     // allLetters.forEach((letter) => {
@@ -182,7 +186,9 @@ const handleCorrectLetter = (letter) => {
         leftArm.style.display = "none";
         rightArm.style.visibility = "visible";
         rightArm.style.height = "30vh";
-        let youLose = document.querySelector("#lose");
+        let keyboard = document.querySelector('#keyboard');
+        keyboard.style.display = "none";
+        let youLose = document.querySelector("#lose")
         youLose.style.visibility = "visible";
       }
     }

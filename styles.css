@@ -15,7 +15,7 @@ body {
 }
 
 #hangman-logo img {
-    height: 30vh; /* Dustin */
+    height: 25vh; /* Dustin */
 }
 
 #new-game-button {
@@ -24,8 +24,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 20px;
-    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 #new-game-button button {
     border: 2px solid #000000;
@@ -49,6 +49,27 @@ body {
 #win {
     visibility: hidden;
     height: 0px;
+}
+
+#win {
+    visibility: hidden;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#win h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #f1c860;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    /* position: absolute;
+    font-size: 10px; */
+    letter-spacing: 5px;
+    font-size: 60px;
 }
 
 /* Dustin */
@@ -196,11 +217,13 @@ body {
 }
 
 #visible-word {
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     color: black;
     letter-spacing: 15px;
     display: flex;
-    /* background-color: purple; */
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-top: 20px;
 } 
 
 .hide {
