@@ -8,7 +8,7 @@
 // ]
 
 let numberOfErrors = 0;
-const secretString = "right";
+const secretString = "async";
 let visibleString = secretString.split("").fill("_").join("");
 const visibleWord = document.querySelector("#visible-word");
 const winWord = [];
